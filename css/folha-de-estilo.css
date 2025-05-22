@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+    /* cabeçalho */
+
+header {
+    background-color: rgb(49, 49, 49);
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+header h2 {
+    color: white;
+    font-size: 25px;
+    margin-left: 70px;
+}
+
+
+header img {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.btn-sair {
+    position: absolute;
+    right: 10px;
+    background-color: red;
+    width: 50px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.btn-sair:active {
+    transform: scale(0.95);
+}
+
+
+.btn-sair ul li a {
+    display: flex;
+    align-items: center;     
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    transition: transform 0.1s ease;
+}
+
+
+.btn-sair:hover {
+    background-color: rgb(216, 0, 0);
+}
+
+
+.btn-sair ul li {
+    list-style: none;
+}
+
+
+
+
+    /* area de login */
+
+
+.login-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.login {  
+    width: 500px;
+    margin: 10px;
+    border: 1px solid #ccc;
+}
+
+.login h2 {  
+    background-color: #f0f0f0;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    font-weight: 100;
+}
+
+.login-input {  
+    width: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-input input {  
+    width: 450px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.login-input button{  
+    background-color: rgb(0, 217, 255);
+    width: 450px;
+    height: 45px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border:  none;
+    border-radius: 5px;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.login-input button:hover {  
+    background-color: rgb(2, 204, 240);
+    cursor: pointer;
+}
+
+
+  /* area de menu  */
+
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.menu-container {
+    width: 70%;
+    border: 1px solid #ccc;
+}
+
+.container-menu-conteudo {
+    display: flex;
+}
+
+.menu h2 {
+    background-color: #e9e9e9;
+    padding: 10px;
+    border-bottom: 1px solid #cfcfcf;
+    font-weight: 100;
+}
+
+.menu-conteudo-1,
+.menu-conteudo-2 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.menu-conteudo-1 a img,
+.menu-conteudo-2 a img {
+    width: 6em;
+}
+
+
+    /* area de abrir chamados */
+
+
+form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+
+.container-abrir-chamado {
+    width: 80%;
+    border: 1px solid #ccc;
+}
+
+.button-titulo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.button-titulo button {
+    width: 46.8%;
+    height: 35px;
+    border-radius: 5px;
+    background-color: #ecc900;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.button-titulo button:hover {
+    background-color: #dfbe03;
+    cursor: pointer;
+}
+
+.button-titulo button a {
+    text-decoration: none;
+}
+
+.container-abrir-chamado h2 {
+    width: 100%;
+    padding: 10px;
+    background-color: #eeeeee;
+    border-bottom: 1px solid #ccc;
+    font-weight: 100;
+}
+
+.abrir-chamado {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+}
+
+input,
+select {
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #888888;
+    padding: 5px;
+}
+
+textarea {
+    height: 50px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+
+
+    /* area de consultar chamdo */
+
+
+.container-chamado {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.chamado {
+    width: 90%;
+    border: 1px solid #ccc;
+}
+
+.chamado button {
+    width: 30em;
+    margin-left: 1em;
+    height: 35px;
+    background-color: #ffe604;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0 10px 15px
+}
+
+.chamado button:hover {
+    background-color: #f3db00;
+    cursor: pointer;
+}
+
+.conteudo-chamdo {rgb(243, 219, 0)
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f0f0f0;
+    margin-bottom: 20px;
+    margin: 15px;
+}
+
+.conteudo-chamdo h2,
+p,
+h4 {
+    margin-bottom: 5px;
+    font-weight: 100;
+    color: #5c5c5c;
+}
+
+.titulo-topo h5 {
+    padding: 10px;
+    color: #5c5c5c;
+    border-bottom: 1px solid #ccc;
+    background-color: #f0f0f0;
+}
